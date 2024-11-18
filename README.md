@@ -22,7 +22,6 @@ MicroEnv is a simple and lightweight state management library designed to handle
 ---
 
 ## Installation
-_Step-by-step guide to set up the project locally._
 
 ```bash
 # Clone the repository
@@ -32,8 +31,6 @@ npm install @ceil-dev/microenv
 ---
 
 ### Usage
-
-_How to use the project once it's set up._
 
 ```javascript
 import Microenv from '@ceil-dev/microenv';
