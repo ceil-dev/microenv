@@ -36,7 +36,7 @@ npm install @ceil-dev/microenv
 _How to use the project once it's set up._
 
 ```javascript
-import Microenv from '@ceil/microenv';
+import Microenv from '@ceil-dev/microenv';
 ```
 
 ---
