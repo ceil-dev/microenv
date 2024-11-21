@@ -1,6 +1,5 @@
 # Microenv
 
-**Short project description**  
 _Minimalistic state management with simple interface_
 
 ---
