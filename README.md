@@ -33,7 +33,7 @@ npm install @ceil-dev/microenv
 ### Usage
 
 ```javascript
-import Microenv from '@ceil-dev/microenv';
+import {microEnv} from '@ceil-dev/microenv';
 ```
 
 ---
@@ -41,7 +41,34 @@ import Microenv from '@ceil-dev/microenv';
 ### Example
 
 ```typescript
+import {microEnv} from '@ceil-dev/microenv';
 
+const run = async () => {
+  const myEnv = microEnv(
+    {
+      propA: 1,
+      propB: 'two',
+      propC: (payload, caller) => {
+        return { message: `Hello ${payload}`, caller };
+      },
+    },
+    { id: 'myEnv' }
+  );
+
+  console.log('myEnv propA value:', myEnv.get('propA'));
+
+  myEnv
+    .get('propB', 'someCallerId', true)
+    .then((v) => console.log('myEnv new propB value:', v));
+
+  console.log('myEnv propC call result:', myEnv.face.propC('World'));
+
+  setTimeout(() => {
+    myEnv.face.propB = 68;
+  }, 2000);
+};
+
+run().catch(console.warn);
 ```
 
 ---
