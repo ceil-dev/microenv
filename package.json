@@ -1,6 +1,6 @@
 {
   "name": "@ceil-dev/microenv",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": "Sergey Shkatula",
   "description": "Minimalistic state management with simple interface",
   "license": "MIT",
@@ -24,6 +24,6 @@
     "typescript": "5.6.3"
   },
   "dependencies": {
-    "@ceil-dev/supply-demand": "0.2.3"
+    "@ceil-dev/supply-demand": "0.2.9"
   }
 }
