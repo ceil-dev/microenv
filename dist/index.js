@@ -115,6 +115,7 @@ const microEnv = (obj = {}, descriptor, { get, set } = {}) => {
             });
             return res;
         }, {});
+        Object.preventExtensions(face);
         return {
             descriptor,
             face,

@@ -159,6 +159,8 @@ const microEnv: EnvCreator = (obj = {}, descriptor, { get, set } = {}) => {
         return res;
       }, {});
 
+      Object.preventExtensions(face);
+
       return {
         descriptor,
         face,
