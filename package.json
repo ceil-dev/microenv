@@ -1,6 +1,6 @@
 {
   "name": "@ceil-dev/microenv",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "author": "Sergey Shkatula",
   "description": "Minimalistic state management with simple interface",
   "license": "MIT",
